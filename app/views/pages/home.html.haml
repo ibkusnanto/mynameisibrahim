@@ -1,0 +1,127 @@
+#wrapper.container
+  .row#header  
+    .span3.sites
+      %a{ :href => 'http://sg.linkedin.com/in/ibkusnanto', :target => 'blank'}
+        = image_tag 'linkedin.png'
+      %a{ :href => 'http://twitter.com/markijon', :target => 'blank'}
+        = image_tag 'twitter.png'
+      %a{ :href => 'http://www.facebook.com/ibkusnanto', :target => 'blank'}
+        = image_tag 'facebook.png'
+    .span6.title
+      %h1 Ibrahim K. Kusnanto
+    .span3.date
+      %h5= DateTime.now.strftime("%A, %B %d, %Y")
+
+  .border
+
+  .row#main
+    #about.span4
+      .highlights
+        %h3 GET TO KNOW IBRAHIM
+        .row
+          .span2
+            %strong
+              Full-time Engineer, Part-time Developer
+            %br
+            %br
+            %p
+              Graduated as a Mechatronics Engineer from Monash University Malaysia, now Ibrahim is working as a Electrical Project Engineer.
+          .span2
+            .pull-left= image_tag 'me.png'
+            %p
+              Having the passion for program-ming, Ibrahim has been learning and developing Ruby on Rails App on his own spare time.
+      %h3.testimonials WHAT OTHERS SAY
+      .row
+        .span2
+          %strong Veera Ragavan S, Senior Lecturer, Monash University
+          %br
+          %br
+          %p
+            “I have known Mr. Ibrahim for about 2.5 years as a student of Mechatronics Engineering Programme at Monash University- Sunway Campus. I have been his as lecturer for a course on Dynamical Systems, Project advisor for 
+        .span2
+          %p
+            Mechatronics Project II and Supervisor for TRC4000/1 Mechatronics Final Year Project. In terms of academic fitness, Ibrahim is receptive and hard-working. He showed genuine motivation and as a result his project work was adjudged as one of the best projects for the year.”
+            %em June 3, 2011
+            
+
+    #works.span5
+      .highlights
+        %h3 IT'S THE WKKEND!
+        = image_tag 'wkkend.png'
+        %strong
+          A platform to share your weekend plans with friends.
+        %br
+        %br
+        %p
+          The main idea of wkkend! is to provide a platform where you can easily organize your weekend (or weekdays) plans with your friends. Let your friends notified about your plans without having to contact them one by one, and left no one behind.
+        %p
+          The site is already live at
+          = succeed ',' do
+            %a{ :href => 'http://beta.wkkend.com', :target => 'blank'} beta.wkkend.com
+          lets go out and play!
+      .side_project
+        .row
+          .span2
+            %h3 EETARP
+            %strong Company profile
+            %br
+            %br
+            %p
+              Eetarp Engineering Pte Ltd will soon have a new fresh looking website!
+            %p
+              Check it out at
+              %a{ :href => 'http://eetarp.herokuapp.com', :target => 'blank'} eetarp.herokuapp.com
+          .span3#housematey
+            %h3 HOUSEMATEY
+            %strong Organize bills with your house-mates easily
+            %br
+            %br
+            %p
+              A project with
+              %a{ :href => 'http://sidkay.com/', :target => 'blank'} sidkay
+              to provide bills splitting and payments notification for those sharing a roof with their housemates.
+            %p
+              Still on development stage, but it's coming soon!
+
+    #social.span3
+      .twitter
+        %h3 WHAT'S HAPPENING?
+        %script{:charset => "utf-8", :src => "http://widgets.twimg.com/j/2/widget.js"}
+        :javascript
+          new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 4,
+            interval: 30000,
+            width: 220,
+            height: 300,
+            theme: {
+              shell: {
+                background: '#f5f5f5',
+                color: '#999999'
+              },
+              tweets: {
+                background: '#f5f5f5',
+                color: '#000000',
+                links: '#17a6ff'
+              }
+            },
+            features: {
+              scrollbar: false,
+              loop: false,
+              live: false,
+              behavior: 'all'
+            }
+          }).render().setUser('markijon').start();
+      .contact
+        %h3 BEER OR COFFEE?
+        %p
+          Invite Ibrahim for a beer or coffee
+        %p
+          Phone: +65 9643 5523
+          %br
+          Mail: ibkusnanto@gmail.com
+          
+
+  #footer
+    %h6.pull-right by wkkenders
