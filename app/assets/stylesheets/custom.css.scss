@@ -1,0 +1,122 @@
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+
+p, body, label, input, button, select, textarea {
+  font-family: 'Bitter', serif;
+}
+
+body {
+  margin-top:10px;
+  word-wrap: break-word;
+
+  p {
+    font-size: 12px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+#wrapper {
+  background-color: whiteSmoke;
+  padding: 0 10px 10px;
+}
+
+.sites {
+  padding-left: 65px;
+  padding-top: 8px;
+  width: 155px;
+
+  img {
+    width: 30px;
+  }
+}
+
+#header {
+  padding: 10px 0 10px;
+
+  h1, h5, h6 {
+    text-align: center;    
+    font-family: 'Bitter', serif;
+  }
+
+  .date {
+    padding-top: 14px;
+  }
+
+  h1 {
+    font-size: 46px;
+    line-height: 46px;
+  }
+}
+
+.border {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 10px;
+}
+
+#main {
+  #social, .span4, .span5 {
+    height: 558px;
+  }
+}
+
+.highlights, #works {
+  img {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.testimonials {
+  margin-top: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #CCC;
+}
+
+#works, #social, #housematey {
+  margin-left: 10px;
+  padding-left: 9px;
+  border-left: 1px solid #CCC;
+}
+
+#housematey {
+  height: 211px;
+}
+
+#works .side_project, #social .contact {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #CCC;
+}
+
+.twtr-hd, .twtr-tweet-wrap {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#footer {
+  margin-top: 10px;
+  border-top: 1px solid #CCC;
+}
+
+#zoom {
+  display: none;
+}
+
+#testimonial_veera {
+  overflow: auto;
+  width: 800px;
+  height: 398px;
+  background-color: #FDFDFD;
+
+  img {
+    width: 150px;
+    margin-right: 10px;
+  }
+}

@@ -15,3 +15,5 @@ gem 'bootstrap-sass'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
+
+gem 'faker'

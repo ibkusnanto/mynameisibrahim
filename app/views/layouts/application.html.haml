@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %link{ :rel => 'shortcut icon', :href => '/assets/title.ico', :type => 'image/x-icon'}
+    %title My Name is Ibrahim
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body
+    = yield
